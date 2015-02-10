@@ -19,11 +19,11 @@ which stands for following hole cards: 66, 77, 88, 99, TT.
 
 One can extend existing implementation of PostflopBucketSetProvider, for example to use some kind of look-up table to speed up computations.
 
-Buckets hierarchy:
+##### Buckets hierarchy
 
 http://s3.postimg.org/6yrolmzs1/diagram.png
 
-Example usage:
+##### Example usage
 
 ```java
 PostflopBucketSetProvider pfbsProvider = new PostflopBucketSetProviderGPImpl();
@@ -33,6 +33,8 @@ PostflopBucketSet pfbs = pfbsProvider.getBuckets(tc, hc); // returns SecondHighP
 ```
 
 See unit tests for more examples.
+
+##### Notes
 
 Please note this project uses this code:
 
