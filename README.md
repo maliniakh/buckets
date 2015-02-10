@@ -5,11 +5,11 @@ This project was done as a part of my M.Sc (learning by imitation applied to pok
 > AT @ AJ4 <br />
 > A9 @ AJ4
 
-In terms of pure hand evaluations, those hands have different values. Since they are very similar, they might be treated as simply the same. Hence idea of 'bucketing' hands. In this case, both of them could be assigned to bucket called, say, TopPairBucket. Such buckets not only make some computation easier, but they are far way similar to way people perceive card values.
+In terms of pure hand evaluations, those hands have different values. Since they are very similar, they might be treated as simply the same. Hence idea of 'bucketing' hands. In this case, both of them could be assigned to a bucket called, say, TopPairBucket. Such buckets not only make some computation easier, but they are far way similar to way people perceive card values.
 
 In this implementation, each bucket is assosiated with a single class, like StraightDraw, TwoPairs, Trips and so on. One might add any bucket he likes, by adding a new class and implementing the belongsTo method, which return true, if provided hole cards and table cards belong to this bucket.
 
-It supports buth preflop and postflop buckets. Postflop buckets are parameterless, preflop ones come with constructor with arguments, like:
+It supports both preflop and postflop buckets. Postflop buckets are parameterless, preflop ones come with constructor with arguments, like:
 
 ```java
 new PairBucket(new CardinalRange(Cardinals.6, Cardinals.TEN))
