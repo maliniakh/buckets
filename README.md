@@ -1,4 +1,4 @@
-# Buckets
+## Buckets
 
 This project was done as a part of my M.Sc (learning by imitation applied to poker) thesis. Buckets in poker AI terminology stand for a way of grouping card evaluations. Consider such two example hands:
 
